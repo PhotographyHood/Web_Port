@@ -1,0 +1,137 @@
+body{
+  background-color: var(--bg-color);
+}
+
+/*-- FONT --*/
+
+@font-face {
+  font-family: N27;
+  src: url("fonts/N27-Regular.otf");
+}
+
+.i img{
+display: none;
+}
+
+.card1{
+margin-top: 37vh;
+}
+
+.card{
+background-color: transparent;
+}
+
+#p1 {
+font-family: N27;
+font-weight: bold;
+font-size: 20px;
+color: var(--text-color);
+}
+
+.load {
+  display: flex;
+  border-radius: 50%;
+  flex-direction: row;
+}
+
+.progress {
+  width: 2em;
+  height: 2em;
+  margin: 0.4em;
+  scale: 0;
+  border-radius: 50%;
+  background: var(--load);
+  animation: loading_492 2s ease infinite;
+  animation-delay: 1s;
+}
+
+@keyframes loading_492 {
+  50% {
+    scale: 1;
+  }
+}
+
+.progress:nth-child(2) {
+  animation-delay: 1.3s;
+}
+
+.progress:nth-child(3) {
+  animation-delay: 1.7s;
+}
+
+/*<!---------------------------------------------------------------------- DARK_MODE_TOGGLE_START ---------------------------------------------------------------------->*/
+
+:root {
+  /* Start of dark/light mode css3 variables for website */
+  --bg-color: white;
+  --load:#252525;
+  --text-color:black;
+  --bg-load:rgba(0, 0, 0, 0.253);
+}
+/* dark mode css variables */
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --load:white;
+  --text-color:white;
+  --bg-load:rgba(255, 255, 255, 0.253);
+}
+
+/* css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center; 
+
+ }
+.theme-switch {
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  left: 1%;
+  top: 1.5%;
+  width: 24px;
+  display: none;
+}
+
+.theme-switch input {
+  display:none;
+}
+.slider {
+  background-color: rgb(0, 0, 0);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: rgb(255, 255, 255);
+  top: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:checked + .slider:before {
+  transform: translateY(26px);
+  background-color: red;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*<!---------------------------------------------------------------------- DARK_MODE_TOGGLE_END ---------------------------------------------------------------------->*/
