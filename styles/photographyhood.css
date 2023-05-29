@@ -454,7 +454,7 @@ svg{
 
 .image-container img {
   width: 100%;
-  height: auto;
+  min-height: 3.8em;
   object-fit: fill;
   border: 1px solid var(--light-b);
   box-shadow: 16px 16px 0px var(--light-b);
@@ -462,7 +462,7 @@ svg{
 }
 .image-container_p img {
   width: 100%;
-  height: auto;
+  min-height: 3.8em;
   object-fit: fill;
   border: 1px solid var(--light-b);
   box-shadow: 16px 16px 0px var(--light-b);
@@ -481,6 +481,17 @@ svg{
   box-shadow: none;
   transform: translateX(16px) translateY(16px);
   background-color: var(--bg-color-o);
+}
+
+.ih{
+  position: absolute;
+  font-family: N27;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  z-index: -1;
+  color: var(--icon-color);
 }
 
 /* -- DATA -- */
