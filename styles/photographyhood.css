@@ -487,9 +487,9 @@ svg{
   position: absolute;
   font-family: N27;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 17px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 17px;
   z-index: -1;
   color: var(--icon-color);
 }
