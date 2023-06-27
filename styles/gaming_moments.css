@@ -2,7 +2,7 @@
 
 body {
     background: var(--bg-color);
-    background-image: radial-gradient(var(--bg-color-o) 1px, transparent 0);
+    background-image: radial-gradient(var(--dots) 1px, transparent 0);
     background-size: 40px 40px;
   }
 
@@ -123,6 +123,7 @@ body {
     --shadow : skyblue;
     --light-b: black;
     --scroll-down: #252525;
+    --dots: black;
   }
   /* dark mode css variables */
   [data-theme="dark"] {
@@ -140,6 +141,7 @@ body {
     --top-scroll-shadow-color:black;
     --light-b:rgb(61, 61, 61);
     --scroll-down: rgb(228, 228, 228);
+    --dots: #4b4b4b;
   }
   
   body {
